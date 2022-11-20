@@ -31,4 +31,28 @@ while(not stop):
 data.append([nama,nim,tugas,uts,uas,int(akhir)])
 ```
 
-### >
+### > Untuk melakukan perulangan input yang ingin digunakan untuk menambahakan data atau tidak (y/t)
+
+```
+tanya = input('Tambahkan Data (y/t) ?')
+    if (tanya == 't'):
+        stop = True
+```
+
+### > Untuk tampilan datanya
+
+```
+print("==================================================================")
+print("| No |    Nama      |  NIM  | Tugas |  UTS  |  UAS  |  Akhir |")
+print("==================================================================")
+
+i = 0
+
+for nilai in data:
+    i += 1
+    print("| {no}  | {nama:12s} | {nim:5s} | {tugas:5d} | {uts:5d} | {uas:5d} | {akhir:6.2f} |".format(no=i, nama=nilai[0], nim=nilai[1], tugas=nilai[2],uts=nilai[3],uas=nilai[4],akhir=nilai[5]))
+
+print("==================================================================")
+```
+
+
